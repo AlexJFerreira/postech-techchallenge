@@ -13,3 +13,4 @@ Para executar aplicação via IDE:
 
 Para acessar o swagger:
 - http://localhost:8080/swagger-ui/index.html
+
