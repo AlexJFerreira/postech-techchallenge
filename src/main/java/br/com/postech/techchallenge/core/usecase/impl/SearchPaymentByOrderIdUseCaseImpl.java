@@ -1,6 +1,6 @@
 package br.com.postech.techchallenge.core.usecase.impl;
 
-import br.com.postech.techchallenge.core.dataprovider.database.PaymentGateway;
+import br.com.postech.techchallenge.core.gateway.database.PaymentGateway;
 import br.com.postech.techchallenge.core.domain.Payment;
 import br.com.postech.techchallenge.core.exceptions.NotFoundException;
 import br.com.postech.techchallenge.core.usecase.SearchPaymentByOrderIdUseCase;

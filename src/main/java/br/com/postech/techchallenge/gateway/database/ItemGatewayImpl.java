@@ -1,6 +1,6 @@
 package br.com.postech.techchallenge.gateway.database;
 
-import br.com.postech.techchallenge.core.dataprovider.database.ItemGateway;
+import br.com.postech.techchallenge.core.gateway.database.ItemGateway;
 import br.com.postech.techchallenge.core.domain.Item;
 import br.com.postech.techchallenge.core.domain.enums.ItemType;
 import br.com.postech.techchallenge.gateway.database.entity.ItemEntity;

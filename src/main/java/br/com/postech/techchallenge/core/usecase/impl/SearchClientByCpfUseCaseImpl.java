@@ -1,6 +1,6 @@
 package br.com.postech.techchallenge.core.usecase.impl;
 
-import br.com.postech.techchallenge.core.dataprovider.database.ClientGateway;
+import br.com.postech.techchallenge.core.gateway.database.ClientGateway;
 import br.com.postech.techchallenge.core.domain.Client;
 import br.com.postech.techchallenge.core.exceptions.NotFoundException;
 import br.com.postech.techchallenge.core.usecase.SearchClientByCpfUseCase;

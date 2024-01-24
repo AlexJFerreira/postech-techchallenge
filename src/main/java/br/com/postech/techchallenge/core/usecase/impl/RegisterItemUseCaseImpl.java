@@ -2,7 +2,7 @@ package br.com.postech.techchallenge.core.usecase.impl;
 
 import br.com.postech.techchallenge.core.domain.Item;
 import br.com.postech.techchallenge.core.usecase.RegisterItemUseCase;
-import br.com.postech.techchallenge.core.dataprovider.database.ItemGateway;
+import br.com.postech.techchallenge.core.gateway.database.ItemGateway;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

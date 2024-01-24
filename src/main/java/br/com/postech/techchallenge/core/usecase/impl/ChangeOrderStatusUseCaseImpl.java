@@ -1,6 +1,6 @@
 package br.com.postech.techchallenge.core.usecase.impl;
 
-import br.com.postech.techchallenge.core.dataprovider.database.OrderGateway;
+import br.com.postech.techchallenge.core.gateway.database.OrderGateway;
 import br.com.postech.techchallenge.core.domain.Order;
 import br.com.postech.techchallenge.core.domain.enums.OrderStatus;
 import br.com.postech.techchallenge.core.exceptions.NotFoundException;

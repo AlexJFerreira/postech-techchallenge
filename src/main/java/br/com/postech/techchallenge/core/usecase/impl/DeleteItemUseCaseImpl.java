@@ -1,6 +1,6 @@
 package br.com.postech.techchallenge.core.usecase.impl;
 
-import br.com.postech.techchallenge.core.dataprovider.database.ItemGateway;
+import br.com.postech.techchallenge.core.gateway.database.ItemGateway;
 import br.com.postech.techchallenge.core.exceptions.NotFoundException;
 import br.com.postech.techchallenge.core.usecase.DeleteItemUseCase;
 import lombok.AllArgsConstructor;

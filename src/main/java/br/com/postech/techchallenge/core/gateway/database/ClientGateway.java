@@ -1,4 +1,4 @@
-package br.com.postech.techchallenge.core.dataprovider.database;
+package br.com.postech.techchallenge.core.gateway.database;
 
 import br.com.postech.techchallenge.core.domain.Client;
 import java.util.Optional;

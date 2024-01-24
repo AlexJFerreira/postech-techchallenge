@@ -5,7 +5,7 @@ import static br.com.postech.techchallenge.core.domain.enums.OrderStatus.PREPARI
 import static br.com.postech.techchallenge.core.domain.enums.OrderStatus.READY_FOR_PICKUP;
 import static br.com.postech.techchallenge.core.domain.enums.OrderStatus.RECEIVED;
 
-import br.com.postech.techchallenge.core.dataprovider.database.OrderGateway;
+import br.com.postech.techchallenge.core.gateway.database.OrderGateway;
 import br.com.postech.techchallenge.core.domain.Order;
 import br.com.postech.techchallenge.core.domain.OrderItem;
 import br.com.postech.techchallenge.core.domain.enums.OrderStatus;
