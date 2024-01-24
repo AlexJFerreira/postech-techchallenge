@@ -1,6 +1,6 @@
 package br.com.postech.techchallenge.core.usecase.impl;
 
-import br.com.postech.techchallenge.core.dataprovider.database.ItemDataProvider;
+import br.com.postech.techchallenge.core.dataprovider.database.ItemGateway;
 import br.com.postech.techchallenge.core.domain.Item;
 import br.com.postech.techchallenge.core.domain.enums.ItemType;
 import br.com.postech.techchallenge.core.usecase.SearchItemUseCase;
@@ -13,12 +13,12 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 public class SearchItemUseCaseImpl implements SearchItemUseCase {
 
-  private ItemDataProvider itemDataProvider;
+  private ItemGateway itemGateway;
 
   @Override
   public List<Item> execute(@NotNull ItemType type) {
     try {
-      return itemDataProvider.searchItemByType(type);
+      return itemGateway.searchItemByType(type);
     } catch (IllegalArgumentException e) {
       throw new IllegalArgumentException("Invalid item type.");
     }

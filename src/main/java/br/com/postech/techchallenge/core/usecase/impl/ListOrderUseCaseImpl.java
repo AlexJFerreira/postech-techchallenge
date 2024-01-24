@@ -1,6 +1,6 @@
 package br.com.postech.techchallenge.core.usecase.impl;
 
-import br.com.postech.techchallenge.core.dataprovider.database.OrderDataProvider;
+import br.com.postech.techchallenge.core.dataprovider.database.OrderGateway;
 import br.com.postech.techchallenge.core.domain.Order;
 import br.com.postech.techchallenge.core.usecase.ListOrderUseCase;
 import java.util.List;
@@ -11,10 +11,10 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 public class ListOrderUseCaseImpl implements ListOrderUseCase {
 
-  private final OrderDataProvider orderDataProvider;
+  private final OrderGateway orderGateway;
 
   @Override
   public List<Order> execute() {
-    return orderDataProvider.searchOrders();
+    return orderGateway.searchOrders();
   }
 }
