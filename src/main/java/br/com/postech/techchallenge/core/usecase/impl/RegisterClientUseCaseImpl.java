@@ -1,7 +1,7 @@
 package br.com.postech.techchallenge.core.usecase.impl;
 
 import br.com.postech.techchallenge.core.gateway.database.ClientGateway;
-import br.com.postech.techchallenge.core.domain.Client;
+import br.com.postech.techchallenge.core.domain.entity.Client;
 import br.com.postech.techchallenge.core.exceptions.ConflictException;
 import br.com.postech.techchallenge.core.usecase.RegisterClientUseCase;
 import lombok.RequiredArgsConstructor;

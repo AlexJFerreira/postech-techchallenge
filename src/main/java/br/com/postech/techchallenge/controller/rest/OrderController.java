@@ -3,7 +3,7 @@ package br.com.postech.techchallenge.controller.rest;
 import br.com.postech.techchallenge.controller.rest.request.OrderCreationRequest;
 import br.com.postech.techchallenge.controller.rest.request.OrderStatusChangeRequest;
 import br.com.postech.techchallenge.controller.rest.response.OrderResponse;
-import br.com.postech.techchallenge.core.domain.Order;
+import br.com.postech.techchallenge.core.domain.entity.Order;
 import br.com.postech.techchallenge.core.usecase.ChangeOrderStatusUseCase;
 import br.com.postech.techchallenge.core.usecase.CreateOrderUseCase;
 import br.com.postech.techchallenge.core.usecase.ListOrderUseCase;

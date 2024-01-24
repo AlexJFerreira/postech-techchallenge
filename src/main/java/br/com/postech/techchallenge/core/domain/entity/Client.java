@@ -1,4 +1,4 @@
-package br.com.postech.techchallenge.core.domain;
+package br.com.postech.techchallenge.core.domain.entity;
 
 import java.time.LocalDate;
 import lombok.Data;

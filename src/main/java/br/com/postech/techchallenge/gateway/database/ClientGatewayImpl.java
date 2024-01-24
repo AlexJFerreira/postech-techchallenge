@@ -1,7 +1,7 @@
 package br.com.postech.techchallenge.gateway.database;
 
 import br.com.postech.techchallenge.core.gateway.database.ClientGateway;
-import br.com.postech.techchallenge.core.domain.Client;
+import br.com.postech.techchallenge.core.domain.entity.Client;
 import br.com.postech.techchallenge.gateway.database.entity.ClientEntity;
 import br.com.postech.techchallenge.gateway.database.repository.ClientRepository;
 import jakarta.transaction.Transactional;

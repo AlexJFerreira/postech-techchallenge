@@ -1,6 +1,6 @@
 package br.com.postech.techchallenge.core.gateway.database;
 
-import br.com.postech.techchallenge.core.domain.Client;
+import br.com.postech.techchallenge.core.domain.entity.Client;
 import java.util.Optional;
 
 public interface ClientGateway {

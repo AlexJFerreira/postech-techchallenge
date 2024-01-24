@@ -1,6 +1,6 @@
 package br.com.postech.techchallenge.controller.rest.response;
 
-import br.com.postech.techchallenge.core.domain.OrderItem;
+import br.com.postech.techchallenge.core.domain.entity.OrderItem;
 import br.com.postech.techchallenge.core.domain.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;

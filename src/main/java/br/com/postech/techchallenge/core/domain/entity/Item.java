@@ -1,4 +1,4 @@
-package br.com.postech.techchallenge.core.domain;
+package br.com.postech.techchallenge.core.domain.entity;
 
 import br.com.postech.techchallenge.core.domain.enums.ItemType;
 import java.math.BigDecimal;

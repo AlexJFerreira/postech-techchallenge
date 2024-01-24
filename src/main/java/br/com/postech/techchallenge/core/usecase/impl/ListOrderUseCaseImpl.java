@@ -1,7 +1,7 @@
 package br.com.postech.techchallenge.core.usecase.impl;
 
 import br.com.postech.techchallenge.core.gateway.database.OrderGateway;
-import br.com.postech.techchallenge.core.domain.Order;
+import br.com.postech.techchallenge.core.domain.entity.Order;
 import br.com.postech.techchallenge.core.usecase.ListOrderUseCase;
 import java.util.List;
 import lombok.AllArgsConstructor;

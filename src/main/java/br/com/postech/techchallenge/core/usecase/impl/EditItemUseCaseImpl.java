@@ -1,7 +1,7 @@
 package br.com.postech.techchallenge.core.usecase.impl;
 
 import br.com.postech.techchallenge.core.gateway.database.ItemGateway;
-import br.com.postech.techchallenge.core.domain.Item;
+import br.com.postech.techchallenge.core.domain.entity.Item;
 import br.com.postech.techchallenge.core.exceptions.NotFoundException;
 import br.com.postech.techchallenge.core.usecase.EditItemUseCase;
 import lombok.RequiredArgsConstructor;

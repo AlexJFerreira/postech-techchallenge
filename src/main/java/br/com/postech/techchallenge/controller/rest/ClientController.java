@@ -2,7 +2,7 @@ package br.com.postech.techchallenge.controller.rest;
 
 import br.com.postech.techchallenge.controller.rest.request.ClientRegistrationRequest;
 import br.com.postech.techchallenge.controller.rest.response.ClientResponse;
-import br.com.postech.techchallenge.core.domain.Client;
+import br.com.postech.techchallenge.core.domain.entity.Client;
 import br.com.postech.techchallenge.core.usecase.RegisterClientUseCase;
 import br.com.postech.techchallenge.core.usecase.SearchClientByCpfUseCase;
 import jakarta.validation.Valid;

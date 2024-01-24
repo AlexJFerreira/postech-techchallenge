@@ -6,8 +6,8 @@ import static br.com.postech.techchallenge.core.domain.enums.OrderStatus.READY_F
 import static br.com.postech.techchallenge.core.domain.enums.OrderStatus.RECEIVED;
 
 import br.com.postech.techchallenge.core.gateway.database.OrderGateway;
-import br.com.postech.techchallenge.core.domain.Order;
-import br.com.postech.techchallenge.core.domain.OrderItem;
+import br.com.postech.techchallenge.core.domain.entity.Order;
+import br.com.postech.techchallenge.core.domain.entity.OrderItem;
 import br.com.postech.techchallenge.core.domain.enums.OrderStatus;
 import br.com.postech.techchallenge.gateway.database.entity.OrderEntity;
 import br.com.postech.techchallenge.gateway.database.entity.OrderItemEntity;

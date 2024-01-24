@@ -3,7 +3,7 @@ package br.com.postech.techchallenge.controller.rest;
 import br.com.postech.techchallenge.controller.rest.request.ItemEditionRequest;
 import br.com.postech.techchallenge.controller.rest.request.ItemRegistrationRequest;
 import br.com.postech.techchallenge.controller.rest.response.ItemResponse;
-import br.com.postech.techchallenge.core.domain.Item;
+import br.com.postech.techchallenge.core.domain.entity.Item;
 import br.com.postech.techchallenge.core.domain.enums.ItemType;
 import br.com.postech.techchallenge.core.usecase.DeleteItemUseCase;
 import br.com.postech.techchallenge.core.usecase.EditItemUseCase;

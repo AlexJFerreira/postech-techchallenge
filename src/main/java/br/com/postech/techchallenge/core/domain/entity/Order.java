@@ -1,4 +1,4 @@
-package br.com.postech.techchallenge.core.domain;
+package br.com.postech.techchallenge.core.domain.entity;
 
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
 
