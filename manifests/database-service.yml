@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-tech-challenge-api-service
+spec:
+  selector:
+    app: mysql-tech-challenge-api
+  ports:
+  - protocol: TCP
+    port: 3306
+    targetPort: 3306
+    nodePort: 30036
+  type: NodePort

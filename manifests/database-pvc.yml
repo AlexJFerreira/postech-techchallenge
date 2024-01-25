@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-data
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: local-storage-tech-challenge-alex-db
+  resources:
+    requests:
+      storage: 512Mi

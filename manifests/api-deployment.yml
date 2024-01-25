@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tech-challenge-alex
+  labels:
+    app: tech-challenge-alex
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tech-challenge-alex
+  template:
+    metadata:
+      labels:
+        app: tech-challenge-alex
+    spec:
+      containers:
+      - name: tech-challenge-alex-container
+        image: 'alexjf1994/techchallenge:v4'
+        ports:
+          - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          periodSeconds: 10
+          failureThreshold: 3
+          initialDelaySeconds: 20
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          periodSeconds: 10
+          failureThreshold: 5
+          initialDelaySeconds: 3
+        resources:
+          requests:
+            cpu: 1m

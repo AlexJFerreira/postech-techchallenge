@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-tech-challenge-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql-tech-challenge-api
+  template:
+    metadata:
+      labels:
+        app: mysql-tech-challenge-api
+    spec:
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 3000
+        fsGroup: 2000
+      containers:
+      - name: mysql-tech-challenge-api
+        image: mysql:latest
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "admin"
+        - name: MYSQL_DATABASE
+          value: "techchallenge"
+        volumeMounts:
+        - name: shared
+          mountPath: /var/lib/mysqla
+      volumes:
+      - name: shared
+        persistentVolumeClaim:
+          claimName: mysql-data
