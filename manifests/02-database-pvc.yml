@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mysql-data
+  name: tech-challenge-alex-pvc
 spec:
   accessModes:
     - ReadWriteOnce

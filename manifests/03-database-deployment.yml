@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql-tech-challenge-api
+  name: mysql-tech-challenge-alex-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mysql-tech-challenge-api
+      app: mysql-tech-challenge-alex-deployment
   template:
     metadata:
       labels:
-        app: mysql-tech-challenge-api
+        app: mysql-tech-challenge-alex-deployment
     spec:
       securityContext:
         runAsUser: 1000
         runAsGroup: 3000
         fsGroup: 2000
       containers:
-      - name: mysql-tech-challenge-api
+      - name: mysql-tech-challenge-container
         image: mysql:latest
         ports:
         - containerPort: 3306
@@ -32,4 +32,4 @@ spec:
       volumes:
       - name: shared
         persistentVolumeClaim:
-          claimName: mysql-data
+          claimName: tech-challenge-alex-pvc

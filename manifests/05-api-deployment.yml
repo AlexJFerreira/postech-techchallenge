@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tech-challenge-alex
+  name: tech-challenge-alex-api-deployment
   labels:
-    app: tech-challenge-alex
+    app: tech-challenge-alex-api-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tech-challenge-alex
+      app: tech-challenge-alex-api-deployment
   template:
     metadata:
       labels:
-        app: tech-challenge-alex
+        app: tech-challenge-alex-api-deployment
     spec:
       containers:
       - name: tech-challenge-alex-container

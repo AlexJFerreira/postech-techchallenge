@@ -4,7 +4,7 @@ metadata:
   name: mysql-tech-challenge-api-service
 spec:
   selector:
-    app: mysql-tech-challenge-api
+    app: mysql-tech-challenge-alex-deployment
   ports:
   - protocol: TCP
     port: 3306
