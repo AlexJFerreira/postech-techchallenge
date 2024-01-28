@@ -1,6 +1,6 @@
 package br.com.postech.techchallenge.core.exceptions;
 
-import br.com.postech.techchallenge.controller.rest.exceptions.ApiException;
+import br.com.postech.techchallenge.adapters.controller.rest.exceptions.ApiException;
 import org.springframework.http.HttpStatus;
 
 
