@@ -43,6 +43,7 @@ public class OrderGatewayImpl implements OrderGateway {
 
     var orderEntity = new OrderEntity();
     if (order.isOrderWithIdentification()) {
+//      checar se nome e cpf estão presentes, se estiverem, buscar no banco e usar o cpf
       orderEntity.setCpf(order.getCpf());
     }
 
