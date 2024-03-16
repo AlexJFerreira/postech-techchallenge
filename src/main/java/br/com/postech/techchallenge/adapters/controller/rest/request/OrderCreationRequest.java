@@ -8,8 +8,6 @@ import lombok.Data;
 public class OrderCreationRequest {
 
   private String cpf;
-  private String name;
-  private String email;
 
   @NotEmpty
   private List<OrderItemRequest> orderItems;
