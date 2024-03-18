@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
 	public static void main(String[] args) {
-		log.info("logando com versão nova");
+		log.info("logando com versão nova 2");
 		SpringApplication.run(Application.class, args);
 	}
 
