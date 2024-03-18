@@ -23,6 +23,6 @@ jobs:
           image: alexjf1994/techchallenge
           tags: latest
           registry: docker.io
-          dockerfile: Dockerfile
+          dockerfile: dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
