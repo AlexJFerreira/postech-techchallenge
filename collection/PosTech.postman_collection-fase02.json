@@ -1,0 +1,552 @@
+{
+	"info": {
+		"_postman_id": "57a03af5-3d7c-475e-8572-6ad361f63823",
+		"name": "Pos Tech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "Register Client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"cpf\":\"00657674036\",\n\"name\":\"Pedro Ferreira\",\n\"email\":\"pedro@teste.com\",\n\"date_of_birth\":\"05-06-1994\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:31000/techchallenge/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "31000",
+							"path": [
+								"techchallenge",
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Client",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:31000/techchallenge/clients/:cpf",
+							"host": [
+								"localhost"
+							],
+							"port": "31000",
+							"path": [
+								"techchallenge",
+								"clients",
+								":cpf"
+							],
+							"variable": [
+								{
+									"key": "cpf",
+									"value": "00657674036"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Item",
+			"item": [
+				{
+					"name": "Register Item",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\":\"Hamburguer\",\n \"description\": \"pão, queijo, alface e molho\",\n \"price\":\"20.00\",\n \"type\":\"SNACK\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:31000/techchallenge/items",
+							"host": [
+								"localhost"
+							],
+							"port": "31000",
+							"path": [
+								"techchallenge",
+								"items"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register Snack",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"name\":\"Hamburguer\",\n \"description\": \"pão, queijo, alface e molho\",\n \"price\":\"20.00\",\n \"type\":\"SNACK\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/techchallenge/items",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"techchallenge",
+										"items"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 27 Oct 2023 22:26:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Register Beverage",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"name\":\"Coca Cola\",\n \"description\": \"refrigerante\",\n \"price\":\"10.00\",\n \"type\":\"BEVERAGE\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/techchallenge/items",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"techchallenge",
+										"items"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 27 Oct 2023 22:27:35 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Register Dessert",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"name\":\"Torta de Maçã\",\n \"description\": \"doce\",\n \"price\":\"5.00\",\n \"type\":\"DESSERT\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/techchallenge/items",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"techchallenge",
+										"items"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 27 Oct 2023 22:28:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Register Side Dish",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"name\":\"Batata Frita\",\n \"description\": \"chips\",\n \"price\":\"8.00\",\n \"type\":\"SIDE_DISH\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/techchallenge/items",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"techchallenge",
+										"items"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 27 Oct 2023 21:57:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get Item By Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:31000/techchallenge/items?type=SNACK",
+							"host": [
+								"localhost"
+							],
+							"port": "31000",
+							"path": [
+								"techchallenge",
+								"items"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "SNACK"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit item",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"name\":\"Big Tasty - matador\",\n \"description\": \"Hamburguer grande mesmo\",\n \"price\":\"40.00\",\n \"type\":\"SNACK\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:31000/techchallenge/items/:itemId",
+							"host": [
+								"localhost"
+							],
+							"port": "31000",
+							"path": [
+								"techchallenge",
+								"items",
+								":itemId"
+							],
+							"variable": [
+								{
+									"key": "itemId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:31000/techchallenge/items/:itemId",
+							"host": [
+								"localhost"
+							],
+							"port": "31000",
+							"path": [
+								"techchallenge",
+								"items",
+								":itemId"
+							],
+							"variable": [
+								{
+									"key": "itemId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "List Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:31000/techchallenge/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "31000",
+							"path": [
+								"techchallenge",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cpf\": \"00657674036\",\n    \"order_items\":[\n        {\n            \"item_id\": \"2\",\n            \"quantity\": 5\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:31000/techchallenge/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "31000",
+							"path": [
+								"techchallenge",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Status Change",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order_status\":\"DELIVERED\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:31000/techchallenge/orders/:orderId",
+							"host": [
+								"localhost"
+							],
+							"port": "31000",
+							"path": [
+								"techchallenge",
+								"orders",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "Search Payment By OrderId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:31000/techchallenge/payments/orders/:orderId",
+							"host": [
+								"localhost"
+							],
+							"port": "31000",
+							"path": [
+								"techchallenge",
+								"payments",
+								"orders",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Payment",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:31000/techchallenge/payments/:paymentId",
+							"host": [
+								"localhost"
+							],
+							"port": "31000",
+							"path": [
+								"techchallenge",
+								"payments",
+								":paymentId"
+							],
+							"variable": [
+								{
+									"key": "paymentId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:31000/actuator/health",
+					"host": [
+						"localhost"
+					],
+					"port": "31000",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

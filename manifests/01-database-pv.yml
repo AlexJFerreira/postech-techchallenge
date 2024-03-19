@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: tech-challenge-alex-pv
+  labels:
+    name: tech-challenge-alex-pv
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: local-storage-tech-challenge-alex-db
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /Users/lexferreira/database-data
