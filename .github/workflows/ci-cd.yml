@@ -4,6 +4,24 @@ name: AWS Lambda CICD
     branches:
       - main
 jobs:
+  code-analisys:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Set up JDK 21
+      uses: actions/setup-java@v1
+      with:
+        java-version: 21    
+    - name: Cache SonarCloud packages
+      uses: actions/cache@v1
+      with:
+        path: ~/.sonar/cache
+        key: ${{ runner.os }}-sonar
+        restore-keys: ${{ runner.os }}-sonar
+
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
