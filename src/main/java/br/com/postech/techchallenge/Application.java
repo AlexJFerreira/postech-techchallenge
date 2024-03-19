@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
 	public static void main(String[] args) {
+		log.info("Nova versão 4");
 		SpringApplication.run(Application.class, args);
 	}
 
