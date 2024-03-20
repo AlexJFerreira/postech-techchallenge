@@ -9,7 +9,7 @@ Para acessar o swagger após a api estar executando:
 - http://localhost:31000/swagger-ui/index.html
 
 Video demonstração arquitetura
-- https://www.youtube.com/watch?v=3zaAA5JuGYY
+- https://www.youtube.com/watch?v=3zaAA5JuGYY 
 
 Collection Postman
 - No diretório collection do projeto
